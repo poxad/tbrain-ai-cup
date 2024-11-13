@@ -1,8 +1,4 @@
-﻿Here is an example of a **README.md** file for your project, incorporating the structure and relevant details you need. It explains the purpose of the project, how to set it up, and how to run it.
-
----
-
-## **AI Challenge 2024 - Text Retrieval System**
+## **AI CUP 2024 玉山人工智慧公開挑戰賽－RAG與LLM在金融問答的應用**
 
 This repository implements a text retrieval system for the **2024 玉山人工智慧公開挑戰賽** (Yu Shan AI Challenge). The system is designed to extract text from PDF documents in two categories: **Finance** and **Insurance**, and retrieve the most relevant documents based on a query.
 
@@ -72,7 +68,7 @@ pip install -r requirements.txt
 
 ### **Usage**
 
-The project provides three primary functions, which can be executed via `main.py` using command-line arguments. For simplicity we have already preprocess the documents to the corpus called `extracted_text.json`, so you can just run the retrieval process.You can run the following steps:
+The project provides three primary functions, which can be executed via `main.py` using command-line arguments. For simplicity we have already preprocess the documents to the corpus called `extracted_text.json`, so you can just run the retrieval process. Here is the detail:
 
 1. **Preprocess the Data**:
 
