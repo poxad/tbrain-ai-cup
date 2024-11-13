@@ -68,7 +68,7 @@ pip install -r requirements.txt
 
 ### **Usage**
 
-The project provides three primary functions, which can be executed via `main.py` using command-line arguments. For simplicity we have already preprocess the documents to the corpus called `extracted_text.json`, so you can just run the retrieval process.You can run the following steps:
+The project provides three primary functions, which can be executed via `main.py` using command-line arguments. For simplicity we have already preprocess the documents to the corpus called `extracted_text.json`, so you can just run the retrieval process. Here is the detail:
 
 1. **Preprocess the Data**:
 
