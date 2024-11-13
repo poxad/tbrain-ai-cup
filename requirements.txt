@@ -1,9 +1,11 @@
 pdfplumber
 tqdm
-rank_bm25
 jieba
 pdf2image
-pytesseract
 easyocr
-pkuseg
 stopwordsiso
+scikit-learn
+ckip-transformers
+os
+json
+numpy
