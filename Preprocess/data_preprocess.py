@@ -53,8 +53,8 @@ def extract_text_from_folder(folder_path):
 
 if __name__ == "__main__":
     # Paths for finance and insurance reference data
-    finance_folder = "./reference/finance"
-    insurance_folder = "./reference/insurance"
+    finance_folder = "dataset/reference/finance"
+    insurance_folder = "dataset/reference/insurance"
 
     # Extract text for each folder
     insurance_text = extract_text_from_folder(insurance_folder)
@@ -67,5 +67,5 @@ if __name__ == "__main__":
     }
 
     # Save the extracted data to JSON
-    with open("extracted_text.json", "w", encoding="utf8") as f:
+    with open("dataset/corpus/extracted_text.json", "w", encoding="utf8") as f:
         json.dump(extracted_data, f, ensure_ascii=False, indent=4)
