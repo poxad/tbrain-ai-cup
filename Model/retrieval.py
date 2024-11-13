@@ -55,8 +55,7 @@ def tfidf_retrieve(query, source, corpus_dict):
     doc_ids = list(filtered_corpus.keys())
     
     # Preprocess the documents (tokenize, remove punctuation, remove stop words)
-    tokenized_documents = [' '.join(jieba.cut(remove_stop_words(remove_punctuation(doc)))) for doc in documents]
-    # tokenized_documents = [' '.join(tokenizer([remove_stop_words(remove_punctuation(doc))])[0]) for doc in documents]
+    tokenized_documents = [' '.join(tokenizer([remove_stop_words(remove_punctuation(doc))])[0]) for doc in documents]
     
     # Initialize TF-IDF Vectorizer with custom stop words as a list
     vectorizer = TfidfVectorizer(
@@ -73,9 +72,7 @@ def tfidf_retrieve(query, source, corpus_dict):
 
     # Preprocess the query (remove punctuation, remove stop words, then tokenize)
     preprocessed_query = remove_stop_words(remove_punctuation(query))  # Remove punctuation and stopwords
-    tokenized_query = ' '.join(jieba.cut(preprocessed_query))  # Tokenize the query
-    # preprocessed_query = remove_stop_words(remove_punctuation(query))  # Remove punctuation and stopwords
-    # tokenized_query = ' '.join(tokenizer([preprocessed_query])[0])  # Tokenize the query
+    tokenized_query = ' '.join(tokenizer([preprocessed_query])[0])  # Tokenize the query
     
     # Vectorize the query
     query_vector = vectorizer.transform([tokenized_query])
