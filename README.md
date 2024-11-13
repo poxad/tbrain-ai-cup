@@ -1,8 +1,4 @@
-﻿Here is an example of a **README.md** file for your project, incorporating the structure and relevant details you need. It explains the purpose of the project, how to set it up, and how to run it.
-
----
-
-## **AI Challenge 2024 - Text Retrieval System**
+## **AI CUP 2024 玉山人工智慧公開挑戰賽－RAG與LLM在金融問答的應用**
 
 This repository implements a text retrieval system for the **2024 玉山人工智慧公開挑戰賽** (Yu Shan AI Challenge). The system is designed to extract text from PDF documents in two categories: **Finance** and **Insurance**, and retrieve the most relevant documents based on a query.
 
